@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>B-Scroll jQuery/Javascript plugin</title>       
+</head>
+<body>
+
+    <!-- Container -->
+    <div id="container">
+        <!-- SECTION 1 -->
+        <div id="section1" class="sections">
+            <h1>section 1</h1>           
+        </div>
+        <!-- SECTION 2 -->
+        <div id="section2" class="sections">
+            <h1>section 2</h1>
+        </div>
+        <!-- SECTION 3 -->        
+        <div id="section3" class="sections">
+            <h1>section 3</h1>                                  
+        </div>
+        <!-- SECTION 4 -->
+        <div id="section4" class="sections">
+            <h1>section 4</h1>          
+        </div>
+    </div>    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="../src/jquery.BScrollUp.js"></script>    
+    <script>
+    $(document).ready(function(e) {	
+		/*********************  B-Scroll *********************/			
+		$("body").BScrollUp({		
+			scrollDuration: 1800,
+			scrollDistance: 1000,
+			scrollEasing: "easeOutQuart",								
+			
+			animationSpeed: 300,
+			css3Easing: 'cubic-bezier(.12,.42,.12,.42)',
+						
+			makeButton: true,
+			upButtonID: 'scrollToTop',				
+			upButtonText: 'Scroll Up',
+			upButtonScrollTo: "#section1",
+			upButtonInlineStyle: {bottom: '25px', right: '25px', color: '#FEFEFE', backgroundColor: '#1B1B1B', padding: '10px'},		
+			upButtonStartingStyle: {visibility: 'hidden', bottom: "-100px"},
+			upButtonEndingStyle: {visibility: 'visible', bottom: '25px'},
+			upButtonZIndex: 999				
+		});
+	});
+    </script>
+</body>
+</html>
