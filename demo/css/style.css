@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/****************** All elements ******************/
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/****************** HTML and Body ******************/
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    direction: ltr;    
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 16px; 
+    overflow-x: hidden;
+}
+
+
+/****************** General Styles ******************/
+a {text-decoration: none; outline: 0;}
+
+h1 {
+    font-size: 45px;    
+    letter-spacing: 5px; 
+	text-transform: uppercase;
+    font-weight: 700;       
+}
+
+
+
+/****************** Up Button ******************/
+#go-upButton > div {
+    position: relative;
+    width: 42px;
+    height: 42px;     
+    background-color: rgba(0, 0, 0, 1);
+    border: 2px solid rgba(254, 254, 254, 0.3);
+}
+
+#go-upButton > div > span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 16px;
+    left: 11px;
+    border-top: 3px solid rgba(254, 254, 254, 0.3);
+    border-right: 3px solid rgba(254, 254, 254, 0.3);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#go-upButton > div:hover {
+    border: 2px solid rgba(252, 110, 32, 0.6);
+}
+
+#go-upButton > div:hover > span {
+    border-top: 3px solid rgba(252, 110, 32, 0.6);
+    border-right: 3px solid rgba(252, 110, 32, 0.6);
+}
+
+#go-upButton > div, #go-upButton > div > span
+{
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;	
+}
+
+
+
+/****************** Sections ******************/
+.sections {    
+    height: 100vh;
+	display: -webkit-flex;	
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;    
+    justify-content: center;
+    -webkit-align-items: center;          
+    align-items: center;
+    text-align: center;
+	overflow:hidden        
+}
+
+
+
+/****************** Section 1 ******************/
+#section1 {
+    background-color: #5E5668;
+}
+
+
+
+
+/****************** Section 2 ******************/
+#section2 {    
+    background-color: #343740;
+}
+
+
+
+
+/****************** Section 3 ******************/
+#section3 {    
+    background-color: #474747;
+}
+
+
+
+
+/****************** Section 4 ******************/
+#section4 {
+    background-color: #A1A1A1;
+}
+
