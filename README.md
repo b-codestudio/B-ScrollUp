@@ -11,7 +11,7 @@ After files are downloaded, you need to go to `src` folder and copy **jquery.BSc
 
 ```
 //Your other script tags
-<script src="your js folder path/jquery.BScroll.js"></script> 
+<script src="your js folder path/jquery.BScrollUp.js"></script> 
 ```
 ### initialization
 Initilize the plugin like other jQuery plugins, like below:
@@ -270,4 +270,4 @@ $("body").BScrollUp({
 **Notice:** This option only works with `upButtonStartingStyle` and `upButtonEndingStyle`.
 
 ### Reporting issues
-f you have any issues or any code improvement, please feel free to share it with me.
+If you have any issues or any code improvement, please feel free to share it with me.
