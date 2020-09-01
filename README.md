@@ -8,6 +8,7 @@ B-ScrollUp is fully functional plugin with all modern browsers and even with old
 
 ### How to use
 - [How to install video](https://www.youtube.com/watch?v=zIdLoEopD_Q)
+
 After files are downloaded, you need to go to `src` folder and copy **jquery.BScrollUp.js** file and paste it to your `js` folder. Now open your root file such as `index.html` and paste this line of code next to your other `<script></script>` codes:
 
 ```
